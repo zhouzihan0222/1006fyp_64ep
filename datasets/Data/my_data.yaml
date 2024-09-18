@@ -1,0 +1,6 @@
+train: /Users/zhouxue/Desktop/yolov10-main-bus/datasets/Data/train/images
+val: /Users/zhouxue/Desktop/yolov10-main-bus/datasets/Data/valid/images
+test: /Users/zhouxue/Desktop/yolov10-main-bus/datasets/Data/test/images
+
+nc: 1
+names: [thyroid-nodule]
