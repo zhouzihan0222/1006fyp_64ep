@@ -10,13 +10,9 @@ conda activate yolov10
 pip install -r requirements.txt
 pip install -e .
 ```
-## Demo
-```
-python app.py
-# Please visit http://127.0.0.1:7860
-```
 
-## Validation
+
+## View the result
 [`yolov10n`](https://huggingface.co/jameslahm/yolov10n)  [`yolov10s`](https://huggingface.co/jameslahm/yolov10s)  [`yolov10m`](https://huggingface.co/jameslahm/yolov10m)  [`yolov10b`](https://huggingface.co/jameslahm/yolov10b)  [`yolov10l`](https://huggingface.co/jameslahm/yolov10l)  [`yolov10x`](https://huggingface.co/jameslahm/yolov10x)  
 ```
 yolo val model=jameslahm/yolov10{n/s/m/b/l/x} data=coco.yaml batch=256
