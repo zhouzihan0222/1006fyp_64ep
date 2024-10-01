@@ -12,5 +12,5 @@ if __name__ == '__main__':
     #训练模型
     results = model.train(data=data_yaml_path,
                           epochs=32,
-                          batch=2,
+                          batch=-1,
                           name='fold_1_v10')
