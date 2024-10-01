@@ -1,0 +1,6 @@
+train: /home/zihan/0918_yolov10/datasets/Data/train_1/images
+val: /home/zihan/0918_yolov10/datasets/Data/valid_1/images
+
+
+nc: 1
+names: [thyroid-nodule]

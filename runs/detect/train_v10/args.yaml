@@ -104,4 +104,4 @@ erasing: 0.4
 crop_fraction: 1.0
 cfg: null
 tracker: botsort.yaml
-save_dir: runs/detect/train_v10
+save_dir: /home/zihan/0918_yolov10/runs/detect/train_v10
