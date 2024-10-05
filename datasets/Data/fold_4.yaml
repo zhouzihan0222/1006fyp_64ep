@@ -1,5 +1,5 @@
-train: /home/zihan/0918_yolov10/datasets/Data/train_4/images
-val: /home/zihan/0918_yolov10/datasets/Data/valid_4/images
+train: /home/zihan/0918_yolov10/datasets/Data/train4/images
+val: /home/zihan/0918_yolov10/datasets/Data/valid4/images
 test: /home/zihan/0918_yolov10/datasets/Data/test/images
 
 nc: 1
