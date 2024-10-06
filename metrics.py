@@ -10,24 +10,24 @@ metric_values = dict()
 
 model = YOLOv10(r'./runs/detect/fold_1_v10/weights/best.pt')
 # 执行验证/推理，确保提供验证集路径
-result = model.val(data='./datasets/Data/fold_1.yaml')
+result = model.val(data='./datasets/Data/fold_1.yaml',split='test')
 
 results.append(result)
 
 model = YOLOv10(r'./runs/detect/fold_2_v10/weights/best.pt')
-result = model.val(data='./datasets/Data/fold_2.yaml')
+result = model.val(data='./datasets/Data/fold_2.yaml',split='test')
 results.append(result)
 
 model = YOLOv10(r'./runs/detect/fold_3_v10/weights/best.pt')
-result = model.val(data='./datasets/Data/fold_3.yaml')
+result = model.val(data='./datasets/Data/fold_3.yaml',split='test')
 results.append(result)
 
 model = YOLOv10(r'./runs/detect/fold_4_v10/weights/best.pt')
-result = model.val(data='./datasets/Data/fold_4.yaml')
+result = model.val(data='./datasets/Data/fold_4.yaml',split='test')
 results.append(result)
 
 model = YOLOv10(r'./runs/detect/fold_5_v10/weights/best.pt')
-result = model.val(data='./datasets/Data/fold_5.yaml')
+result = model.val(data='./datasets/Data/fold_5.yaml',split='test')
 results.append(result)
 
 
@@ -45,6 +45,6 @@ visualize_metric = ['mean', 'std', 'min', 'max']
 metric = metric_df.describe().loc[visualize_metric]
 print(metric)
 
-metric.to_csv('./runs/detect/5val_metrics_summary.csv', index=True)
+metric.to_csv('./runs/detect/5val_metrics_summary_test.csv', index=True)
 print("Metrics saved to metrics_summary.csv")
 

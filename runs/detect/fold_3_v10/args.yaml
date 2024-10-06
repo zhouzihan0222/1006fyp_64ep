@@ -2,7 +2,7 @@ task: detect
 mode: train
 model: /home/zihan/0918_yolov10/ultralytics/cfg/models/v10/yolov10n.yaml
 data: /home/zihan/0918_yolov10/datasets/Data/fold_3.yaml
-epochs: 32
+epochs: 64
 time: null
 patience: 100
 batch: -1
